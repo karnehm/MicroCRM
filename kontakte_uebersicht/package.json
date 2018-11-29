@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:element": "vue-cli-service build --target wc --name payment-view src/components/Contact-View.vue"
+    "build:element": "vue-cli-service build --target wc --name contact-view src/components/Contact-View.vue"
   },
   "dependencies": {
     "vue": "^2.5.17",
