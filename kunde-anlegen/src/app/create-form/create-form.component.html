@@ -1,0 +1,114 @@
+<div *ngIf="alertMessage" class="alert alert-primary alert-dismissible fade show" role="alert">
+  {{alertMessage}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="alertMessage = null">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form *ngIf="formGroup" [formGroup]="formGroup">
+  <div class="form-group">
+    <label for="{{customerIdId}}">{{customerIdPlacehoder}}</label>
+    <input
+      id="{{customerIdId}}"
+      placeholder="{{customerIdPlacehoder}}"
+      formControlName="id"
+      class="form-control" disabled>
+  </div>
+  <div class="form-group">
+    <label for="{{genderId}}">{{genderPlaceholder}}</label>
+    <select id="{{genderId}}" formControlName="gender" class="form-control" (change)="updateStatus()">
+      <option selected>{{genderPlaceholder}}</option>
+      <option *ngFor="let option of genderOptions">{{option}}</option>
+    </select>
+    <div *ngIf="getGender.invalid && (getGender.dirty || getGender.touched)"
+         class="alert alert-danger">
+      <div *ngIf="getGender.errors.forbiddenName">
+        Bitte wählen sie einen Wert. Bei Geschlecht handelt es sich nicht um eine korrekte Wahl.
+      </div>
+      <div *ngIf="getGender.errors.required">
+        Geschlecht is required.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="{{nameId}}">{{namePlaceholder}}</label>
+    <input
+      id="{{nameId}}"
+      placeholder="{{namePlaceholder}}"
+      formControlName="name"
+      (blur)="updateStatus()"
+      class="form-control" required>
+    <div *ngIf="getName.invalid && (getName.dirty || getName.touched)"
+         class="alert alert-danger">
+      <div *ngIf="getName.errors.required">
+        Name is required.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="{{vnameId}}">{{vnamePlaceholder}}</label>
+    <input
+      id="{{vnameId}}"
+      placeholder="{{vnamePlaceholder}}"
+      formControlName="vorname"
+      (blur)="updateStatus()"
+      class="form-control">
+    <div *ngIf="getVorname.invalid && (getVorname.dirty || getVorname.touched)"
+         class="alert alert-danger">
+
+      <div *ngIf="getVorname.errors.required">
+        Vorname is required.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row" formGroupName="phone">
+    <div class="col">
+      <label for="{{phoneNumberId}}">{{phoneNumberPlaceholder}}</label>
+      <input
+        id="{{phoneNumberId}}"
+        placeholder="{{phoneNumberPlaceholder}}"
+        formControlName="number"
+        (blur)="updateStatus()"
+        class="form-control">
+      <div *ngIf="getPhoneNumber.invalid && (getPhoneNumber.dirty || getPhoneNumber.touched)"
+           class="alert alert-danger">
+
+        <div *ngIf="getPhoneNumber.errors.required">
+          Telefonnummer is required.
+        </div>
+      </div>
+
+    </div>
+    <div class="col">
+      <label for="{{phoneTypeId}}">{{phoneTypePlaceholder}}</label>
+      <select id="{{phoneTypeId}}" formControlName="type" class="form-control" (change)="updateStatus()">
+        <option selected>{{phoneTypePlaceholder}}</option>
+        <option *ngFor="let option of phoneTypeOptions">{{option}}</option>
+      </select>
+      <div *ngIf="getPhoneType.invalid && (getPhoneType.dirty || getPhoneType.touched)"
+           class="alert alert-danger">
+        <div *ngIf="getPhoneType.errors.forbiddenName">
+          Bitte wählen sie einen Wert. Bei Art handelt es sich nicht um eine korrekte Wahl.
+        </div>
+        <div *ngIf="getPhoneType.errors.required">
+          Telefonnummer is required.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-top: 25px">
+    <div class="col">
+      <button type="button" class="btn btn-outline-primary" (click)="sendClick()" [disabled]="formGroup.invalid">Speichern</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-danger" (click)="cancleClick()">Abbrechen</button>
+    </div>
+  </div>
+</form>
+<p>
+  {{formGroup.value | json}}
+</p>
