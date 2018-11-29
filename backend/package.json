@@ -1,0 +1,13 @@
+{
+	"name": "ba-backend",
+	"version": "1.0.0",
+	"license": "UNLICENSED",
+	"email": "dominic.karnehm@gmail.com",
+	"description": "Es handelt sich um das im Rahmen der Bachelor Arbeit verwendete Backend.",
+	"scripts": {
+		"start": "json-server --watch db.json"
+	},
+	"dependencies": {
+		"json-server": "^0.14.0"
+	}
+}
