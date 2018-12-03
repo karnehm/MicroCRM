@@ -7,6 +7,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { CreateFormComponent } from './create-form/create-form.component';
 import {HttpService} from './http.service';
 import {createCustomElement} from '@angular/elements';
+import { ElementZoneStrategyFactory } from 'elements-zone-strategy';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,10 @@ import {createCustomElement} from '@angular/elements';
 export class AppModule {
   constructor(private injector: Injector, public http: HttpService) {
     // Convert `PopupComponent` to a custom element.
-    let createForm = createCustomElement(CreateFormComponent, {injector: this.injector});
+    const strategyFactory = new ElementZoneStrategyFactory(CreateFormComponent, this.injector);
+    const createForm = createCustomElement(CreateFormComponent, {injector: this.injector, strategyFactory});
     // Register the custom element with the browser.
-    customElements.define('app-create-form', createForm);
+    customElements.define('customer-edit', createForm);
   }
   ngDoBootstrap() {
   }

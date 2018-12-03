@@ -8,7 +8,7 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class HttpService {
 
-  private kundeUrl = 'http://localhost:3000/kunde';
+  private kundeUrl = 'http://localhost:3000/customer';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'

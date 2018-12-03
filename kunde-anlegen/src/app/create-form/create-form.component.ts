@@ -12,7 +12,6 @@ import {
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {HttpService} from '../http.service';
 import {forbiddenNameValidator} from '../forbidden-name.directive';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-create-form',
@@ -23,15 +22,14 @@ import {Observable} from 'rxjs';
 })
 export class CreateFormComponent implements OnInit {
 
-  @Input() kundennummer = '';
+  @Input() customerid = '';
   @Input() gender = '';
-  @Input() kundeName = '';
-  @Input() kundeVorname = '';
-  @Input() telefonnummer = '';
-  @Input() telefontyp = '';
-  @Input() update: Observable<any>;
-  @Output() saved: EventEmitter<any> = new EventEmitter<any>();
-  @Output() cancled: EventEmitter<any> = new EventEmitter<any>();
+  @Input() lastname = '';
+  @Input() firstname = '';
+  @Input() phonenumber = '';
+  @Input() phonetype = '';
+  @Output() customerUpdate: EventEmitter<any> = new EventEmitter<any>();
+  @Output() CustomerCanceled: EventEmitter<any> = new EventEmitter<any>();
 
   alertMessage: string;
 
@@ -61,19 +59,15 @@ export class CreateFormComponent implements OnInit {
 
   ngOnInit() {
     this.formGroup  = this.fb.group({
-      id: [this.kundennummer],
+      id: [this.customerid],
       gender: [this.gender || this.genderPlaceholder, [Validators.required, forbiddenNameValidator(/Geschlecht/i)]],
-      name: [this.kundeName, Validators.required],
-      vorname: [this.kundeVorname, Validators.required],
+      name: [this.lastname, Validators.required],
+      vorname: [this.firstname, Validators.required],
       phone: this.fb.group({
-        number: [this.telefonnummer, Validators.required],
-        type: [this.telefontyp || this.phoneTypePlaceholder, [Validators.required, forbiddenNameValidator(/Art/i)]]
+        number: [this.phonenumber, Validators.required],
+        type: [this.phonetype || this.phoneTypePlaceholder, [Validators.required, forbiddenNameValidator(/Art/i)]]
       })
     });
-
-    if (this.update) {
-      this.update.subscribe(x => this.updateStatus());
-    }
   }
 
   get getGender() { return this.formGroup.get('gender'); }
@@ -87,7 +81,7 @@ export class CreateFormComponent implements OnInit {
       .subscribe(
         x => {
           this.alertMessage = 'Speichern erfolgreich!';
-          this.saved.next(this.formGroup.value);
+          this.customerUpdate.next(this.formGroup.value);
           this.formGroup.reset();
         },
         e => {
@@ -97,11 +91,7 @@ export class CreateFormComponent implements OnInit {
 
   cancleClick() {
     this.formGroup.reset();
-    this.cancled.next();
-  }
-
-  updateStatus() {
-    this.app.tick();
+    this.CustomerCanceled.next();
   }
 
 }

@@ -15,6 +15,6 @@ export class AppComponent {
     // Convert `PopupComponent` to a custom element.
     const createForm = createCustomElement(CreateFormComponent, {injector});
     // Register the custom element with the browser.
-    customElements.define('kunde-create', createForm);
+    customElements.define('customer-edit', createForm);
   }
 }

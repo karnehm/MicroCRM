@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <PaymentView v-on:bill="onBill" v-bind:do-update="updater" />
+    <PaymentView v-on:bill="onBill"  />
     <button v-on:click="update">Update now</button>
   </div>
 </template>
 
 <script>
     import PaymentView from './components/Payment-View'
-    import { Subject } from "rxjs"
 
     export default {
         name: 'App',
@@ -19,17 +18,9 @@
                 alert(x)
             },
             update: function () {
-              this.updater.next();
+                const event = new CustomEvent("paymentUpdate", { detail: { customname: 'Hansi' }, bubbles: true, cancelable: false});
+                document.dispatchEvent(event);
             }
-        },
-        data() {
-            return {
-                updater: Subject
-            };
-        },
-        created() {
-            this.updater = new Subject();
-
         }
     }
 </script>

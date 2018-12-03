@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use-Case Kontakt</title>
+</head>
+<body>
+<script src="kontakt.js"></script>
+
+<script>
+    onLoad = () => {
+        document.addEventListener('contactUpdate', (e) => window.alert(JSON.stringify(e.detail)));
+    }
+    window.onload = onLoad();
+</script>
+
+    <contact-edit
+            contact-id="5"
+            customername="Max Mustermann"
+            description="Des is jetzt a Test"
+            contacttype="E-Mail"
+            date="06.11.2018"
+            comment="Hierbei handelt es sich um den Kommentar. Der kann manchmal ziemlich lang ausfallen.">
+    </contact-edit>
+</body>
+
+</html>

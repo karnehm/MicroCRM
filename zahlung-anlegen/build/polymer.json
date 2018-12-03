@@ -1,0 +1,32 @@
+{
+  "entrypoint": "index.html",
+  "shell": "payment-create.js",
+  "fragments": [],
+  "sources": [
+    "src/**/*",
+    "index.html",
+    "payment-create.js"
+  ],
+  "extraDependencies": [
+    "bower_components/webcomponentsjs/*.js",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    {
+      "name": "payment-create",
+      "bundle": true,
+      "js-compile": true,
+      "js": {
+        "minify": true
+      }
+    }
+  ],
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  },
+  "npm": true,
+  "componentDir": "node_modules/",
+  "moduleResolution": "node"
+}

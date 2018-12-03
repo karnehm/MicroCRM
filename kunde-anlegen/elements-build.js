@@ -9,7 +9,13 @@ const concat = require('concat');
     './dist/Kunde-Anlegen/main.js'
   ];
 
-  await fs.ensureDir('elements');
-  await concat(files, 'elements/app-create-form.js');
+  await concat(files, 'dist/customer-edit.js');
+  fs.writeFile("dist/index.html", '<html><head><title>Customer Edit</title></head><body><customer-edit></customer-edit><script src="customer-edit.js" type="application/javascript"></script></body></html>', function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The file was saved!");
+  });
+
 
 })();

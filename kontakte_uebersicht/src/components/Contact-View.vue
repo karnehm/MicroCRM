@@ -28,16 +28,14 @@
 <script>
     import bAlert from 'bootstrap-vue/es/components/alert/alert'
     import axios from 'axios'
-    import { Subject }  from 'rxjs'
 
     export default {
         name: 'ContactView',
         model: {
-            props: ['doUpdate', 'customername'],
+            props: ['customername'],
             event: 'contact'
         },
         props: {
-            doUpdate: Subject,
             customername: String
         },
         components: {
@@ -70,9 +68,7 @@
         },
         mounted () {
             this.updateValues(this.customername)
-            if(this.doUpdate) {
-                this.doUpdate.subscribe(() => this.updateValues(this.customername));
-            }
+            document.addEventListener('contactUpdate', (e) => this.updateValues(e.detail ? e.detail.customername : null));
         },
     }
 </script>
@@ -86,9 +82,7 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
   h2 {
     text-align: center;

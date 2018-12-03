@@ -21,16 +21,14 @@
     import axios from 'axios'
     import bTable from 'bootstrap-vue/es/components/table/table'
     import bAlert from 'bootstrap-vue/es/components/alert/alert'
-    import { Subject } from "rxjs"
 
     export default {
         name: 'PaymentView',
         model: {
-            props: ['doUpdate', 'customername'],
+            props: ['customername'],
             event: 'bill'
         },
         props: {
-            doUpdate: Subject,
             customername: String
         },
         components: {
@@ -84,9 +82,7 @@
         },
         mounted () {
             this.updateValues(this.customername)
-            if(this.doUpdate) {
-                this.doUpdate.subscribe(() => this.updateValues(this.customername));
-            }
+            document.addEventListener('paymentUpdate', (() => this.updateValues()).bind(this));
         },
 
     }

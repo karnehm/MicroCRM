@@ -1,0 +1,18 @@
+{
+  "npm": true,
+  "moduleResolution": "node",
+  "entrypoint": "index.html",
+  "shell": "payment-create.js",
+  "extraDependencies": [
+    "./node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [{
+    "name": "payment-create",
+    "bundle": true,
+    "js-compile": true,
+    "js": {
+      "minify": true
+    }
+  }],
+  "lint": {"rules":  ["polymer-3"]}
+}

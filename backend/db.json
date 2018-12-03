@@ -1,44 +1,104 @@
 {
-	"customer": [{
-		"id":1,
-		"gender":"Herr",
-		"name":"Mustermann",
-		"vorname":"Max",
-		"phone":{
-			"number":"0123456789",
-			"typ":"Mobil"
-	}}],
-	"contact": [{
-		"id":1,
-		"customer":"Mustermann Max",
-		"description":"Zielkundenkampagne - 123",
-		"type":"E-Mail",
-		"date":"01.12.2018",
-		"comment":""
-	}],
-	"payment": [{
-		"id":1,
-		"customer":"Mustermann Max",
-		"bill":"123",
-		"amount":"50",
-		"mwstfree":false,
-		"amountdate":"04.12.2018",
-		"paydate":"09.12.2018"
-	}, {
-		"id":2,
-		"customer":"Mustermann Max",
-		"bill":"124",
-		"amount":"59",
-		"mwstfree":false,
-		"amountdate":"01.12.2018",
-		"paydate":"09.12.2018"
-	},{
-		"id":2,
-		"customer":"Hansi",
-		"bill":"123",
-		"amount":"50",
-		"mwstfree":false,
-		"amountdate":"04.12.2018",
-		"paydate":"09.12.2018"
-		}]
+  "customer": [
+    {
+      "id": 1,
+      "gender": "Herr",
+      "name": "Mustermann",
+      "vorname": "Max",
+      "phone": {
+        "number": "0123456789",
+        "typ": "Mobil"
+      }
+    },
+    {
+      "id": 2,
+      "gender": "Herr",
+      "name": "aasdf",
+      "vorname": "asdf",
+      "phone": {
+        "number": "555",
+        "type": "Mobil"
+      }
+    },
+    {
+      "id": 3,
+      "gender": "Herr",
+      "name": "hasdf",
+      "vorname": "asdf",
+      "phone": {
+        "number": "asdf",
+        "type": "Mobil"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "customer": "Mustermann Max",
+      "description": "Zielkundenkampagne - 123",
+      "type": "E-Mail",
+      "date": "01.12.2018",
+      "comment": ""
+    },
+    {
+      "id": 2,
+      "customer": "Hansi",
+      "description": "Beschwerde",
+      "type": "Telefon",
+      "date": "03.12.2018"
+    }
+  ],
+  "payment": [
+    {
+      "id": 1,
+      "customer": "Mustermann Max",
+      "bill": "123",
+      "amount": "50",
+      "mwstfree": false,
+      "amountdate": "04.12.2018",
+      "paydate": "09.12.2018"
+    },
+    {
+      "id": 2,
+      "customer": "Mustermann Max",
+      "bill": "124",
+      "amount": "59",
+      "mwstfree": false,
+      "amountdate": "01.12.2018",
+      "paydate": "09.12.2018"
+    },
+    {
+      "id": 2,
+      "customer": "Hansi",
+      "bill": "124",
+      "amount": "55",
+      "mwstfree": false,
+      "amountdate": "04.12.2018",
+      "paydate": "09.12.2018"
+    },
+    {
+      "id": 3,
+      "bill": "123",
+      "amount": "",
+      "mwstfree": false,
+      "amountdate": "",
+      "paydate": ""
+    },
+    {
+      "id": 4,
+      "bill": "123",
+      "amount": "",
+      "mwstfree": false,
+      "amountdate": "",
+      "paydate": ""
+    },
+    {
+      "id": 5,
+      "bill": "123",
+      "amount": "",
+      "mwstfree": false,
+      "amountdate": "",
+      "paydate": ""
+    }
+  ]
 }

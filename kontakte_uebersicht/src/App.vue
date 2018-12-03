@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ContactView v-on:contact="onContact" v-bind:do-update="updater"/>
+    <ContactView v-on:contact="onContact"/>
     <button v-on:click="update">Update Now</button>
   </div>
 </template>
@@ -18,7 +18,12 @@ export default {
             alert(JSON.stringify(x))
         },
         update: function () {
-            this.updater.next();
+          const event = new CustomEvent("contactUpdate", {
+              detail: {customname: 'Hansi'},
+              bubbles: true,
+              cancelable: false
+          });
+          document.dispatchEvent(event);
         }
     },
     data() {
