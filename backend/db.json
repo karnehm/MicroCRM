@@ -29,6 +29,28 @@
         "number": "asdf",
         "type": "Mobil"
       }
+    },
+    {
+      "customerId": "",
+      "gender": "Herr",
+      "lastname": "asdf",
+      "firstname": "asdf",
+      "phone": {
+        "number": "222",
+        "type": "Mobil"
+      },
+      "id": 4
+    },
+    {
+      "customerId": "",
+      "gender": "Herr",
+      "lastname": "qwer",
+      "firstname": "asdf",
+      "phone": {
+        "number": "www",
+        "type": "Privat"
+      },
+      "id": 5
     }
   ],
   "contact": [
@@ -99,6 +121,14 @@
       "mwstfree": false,
       "amountdate": "",
       "paydate": ""
+    },
+    {
+      "id": 6,
+      "bill": "123",
+      "amount": "123",
+      "mwstfree": true,
+      "amountdate": "121212",
+      "paydate": "121212"
     }
   ]
 }

@@ -1,1 +1,112 @@
-<app-create-form kundennummer="1"></app-create-form>
+<h2>Kunde Anlegen</h2>
+<div *ngIf="alertMessage" class="alert alert-primary alert-dismissible fade show" role="alert">
+  {{alertMessage}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="alertMessage = null">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form *ngIf="formGroup" [formGroup]="formGroup">
+  <div class="form-group">
+    <label for="customerId">Kundennummer</label>
+    <input
+      id="customerId"
+      placeholder="Kundennummer"
+      formControlName="customerId"
+      class="form-control" disabled>
+  </div>
+  <div class="form-group">
+    <label for="gender">Geschlecht</label>
+    <select id="gender" formControlName="gender" class="form-control">
+      <option selected>Geschlecht</option>
+      <option>Herr</option>
+      <option>Frau</option>
+    </select>
+    <div *ngIf="getGender.invalid && (getGender.dirty || getGender.touched)"
+         class="alert alert-danger">
+      <div *ngIf="getGender.errors.forbiddenName">
+        Bitte wählen sie einen Wert. Bei Geschlecht handelt es sich nicht um eine korrekte Wahl.
+      </div>
+      <div *ngIf="getGender.errors.required">
+        Geschlecht ist ein Pflichtfeld.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="lastname">Name</label>
+    <input
+      id="lastname"
+      placeholder="Name"
+      formControlName="lastname"
+      class="form-control" required>
+    <div *ngIf="getLastname.invalid && (getLastname.dirty || getLastname.touched)"
+         class="alert alert-danger">
+      <div *ngIf="getLastname.errors.required">
+        Name ist ein Pflichtfeld.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="firstname">Vorname</label>
+    <input
+      id="firstname"
+      placeholder="Vorame"
+      formControlName="firstname"
+      class="form-control">
+    <div *ngIf="getFirstname.invalid && (getFirstname.dirty || getFirstname.touched)"
+         class="alert alert-danger">
+
+      <div *ngIf="getFirstname.errors.required">
+        Vorname ist ein Pflichtfeld.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group form-row" formGroupName="phone">
+    <div class="col">
+      <label for="phonenumber">Telefonnummer</label>
+      <input
+        id="phonenumber"
+        placeholder="Telefonnummer"
+        formControlName="number"
+        class="form-control">
+      <div *ngIf="getPhoneNumber.invalid && (getPhoneNumber.dirty || getPhoneNumber.touched)"
+           class="alert alert-danger">
+
+        <div *ngIf="getPhoneNumber.errors.required">
+          Telefonnummer ist ein Pflichtfeld.
+        </div>
+      </div>
+
+    </div>
+    <div class="col form-group">
+      <label for="phonetype">Art</label>
+      <select id="phonetype" formControlName="type" class="form-control">
+        <option selected>Art</option>
+        <option>Mobil</option>
+        <option>Privat</option>
+        <option>Geschäftlich</option>
+      </select>
+      <div *ngIf="getPhoneType.invalid && (getPhoneType.dirty || getPhoneType.touched)"
+           class="alert alert-danger">
+        <div *ngIf="getPhoneType.errors.forbiddenName">
+          Bitte wählen sie einen Wert. Bei Art handelt es sich nicht um eine korrekte Wahl.
+        </div>
+        <div *ngIf="getPhoneType.errors.required">
+          Die Art der Telefonnummer ist ein Pflichtfeld.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-top: 25px">
+    <div class="col">
+      <button type="button" class="btn btn-outline-primary" (click)="sendClick()" [disabled]="formGroup.invalid">Speichern</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-danger" (click)="cancleClick()">Abbrechen</button>
+    </div>
+  </div>
+</form>

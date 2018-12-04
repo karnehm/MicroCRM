@@ -1,7 +1,7 @@
-div .ng-invalid {
+.form-group .ng-invalid {
   border-left: 5px solid rgb(220, 53, 69);;
 }
-div .ng-valid {
+.form-group .ng-valid {
   border-left: 5px solid rgb(40, 167, 69);
 }
 

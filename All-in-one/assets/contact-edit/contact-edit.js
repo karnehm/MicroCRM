@@ -12,8 +12,11 @@
         font-family: sans-serif;
         color: #2e3538;
       }
+      form {
+      max-width: 90%;
+      }
     </style>
-    <h1>Kontakt Erstellen / Bearbeiten</h1>
+    <h2>Kontakt Erstellen / Bearbeiten</h2>
     <form>
         <div>
             <label for="contactId">Kundennummer</label>
@@ -61,7 +64,7 @@
         constructor() {
             super();
             // Create a shadow root
-            this.shadow = this.attachShadow({mode: 'open'});
+            this.shadow = this.attachShadow({mode: 'closed'});
 
             // Append instance of Template
             this.shadow.appendChild(template.content.cloneNode(true));

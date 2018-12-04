@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>MicroCRM - All-in-One</title>
+    <script src="https://unpkg.com/zone.js@0.8.26/dist/zone.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <script src="assets/contact-edit/contact-edit.js"></script>
+    <script src="assets/contact-view/contact-view.js"></script>
+    <script src="assets/payment-view/payment-view.js"></script>
+    <script type="module" src="assets/payment-edit/payment-create.js"></script>
+    <script src="assets/customer-search/customer-search.js"></script>
+    <script src="assets/customer-edit/customer-edit.js"></script>
+
 </head>
 <body>
-    <div style="display:table">
+    <div style="display:table; align:center">
         <div style="display:table-row;">
             <div style="display: table-cell">
                 <customer-edit></customer-edit>
@@ -24,22 +34,14 @@
         </div>
         <div style="display: table-row">
             <div style="display: table-cell">
-                <payment-edit></payment-edit>
+                <payment-create></payment-create>
             </div>
             <div style="display: table-cell">
                 <payment-view></payment-view>
             </div>
         </div>
     </div>
-    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script>
-    <script src="assets/contact-edit/kontakt.js"></script>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="assets/contact-view/contact-view.min.js"></script>
-    <script src="assets/payment-view/payment-view.min.js"></script>
-    <script type="module" src="assets/payment-edit/payment-create.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/@angular/core/esm2015/index.js" type="module"></script>
-    <script src="assets/customer-edit/customer-edit.js"></script>
+
 
 </body>
 </html>

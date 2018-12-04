@@ -1,5 +1,11 @@
 {
-  "name": "payment-create",
+  "name": "zahlung-anlegen",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karnehm/MicroCRM/tree/master/zahlung-anlegen"
+  },
+  "private": true,
   "description": "Es handelt sich um das Customer Element des Use-Cases Zahlung Anlegen/Bearbeiten aus MicroCRM",
   "main": "payment-create.js",
   "scripts": {

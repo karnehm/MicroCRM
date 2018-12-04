@@ -8,16 +8,15 @@
     template.innerHTML =  `
     <link rel='stylesheet' type="text/css" href='./bare.min.css'>
     <style>
-    :host {
-        display: inline-block;
-      }
       * {
         font-family: sans-serif;
-        font-size: 10px;
         color: #2e3538;
       }
+      form {
+      max-width: 90%;
+      }
     </style>
-    <h1>Kontakt Erstellen / Bearbeiten</h1>
+    <h2>Kontakt Erstellen / Bearbeiten</h2>
     <form>
         <div>
             <label for="contactId">Kundennummer</label>

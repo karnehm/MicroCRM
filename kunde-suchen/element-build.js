@@ -4,8 +4,9 @@ const fs = require('fs-extra');
 const concat = require('concat');
 (async function build() {
   const files = [
-    './dist/Kunde-Suche/runtime.js',
     './dist/Kunde-Suche/polyfills.js',
+    './dist/Kunde-Suche/runtime.js',
+
 //    './dist/Kunde-Suche/scripts.js',
     './dist/Kunde-Suche/main.js',
   ]
