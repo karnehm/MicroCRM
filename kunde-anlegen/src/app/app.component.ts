@@ -16,8 +16,6 @@ export class AppComponent implements OnInit {
   @Input() firstname = '';
   @Input() phonenumber = '';
   @Input() phonetype = '';
-  @Output() customerUpdate: EventEmitter<any> = new EventEmitter<any>();
-  @Output() CustomerCanceled: EventEmitter<any> = new EventEmitter<any>();
 
   alertMessage: string;
   formGroup: FormGroup;
@@ -26,9 +24,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.formGroup  = this.fb.group({
-      customerId: [this.customerid],
+      id: [this.customerid],
       gender: [this.gender || 'Geschlecht', [Validators.required, forbiddenNameValidator(/Geschlecht/i)]],
-      lastname: [this.lastname, Validators.required],
+      name: [this.lastname, Validators.required],
       firstname: [this.firstname, Validators.required],
       phone: this.fb.group({
         number: [this.phonenumber, Validators.required],
@@ -38,7 +36,7 @@ export class AppComponent implements OnInit {
   }
 
   get getGender() { return this.formGroup.get('gender'); }
-  get getLastname() { return this.formGroup.get('lastname'); }
+  get getLastname() { return this.formGroup.get('name'); }
   get getFirstname() {return this.formGroup.get('firstname'); }
   get getPhoneNumber() { return this.formGroup.get('phone').get('number'); }
   get getPhoneType() { return this.formGroup.get('phone').get('type'); }
@@ -48,7 +46,8 @@ export class AppComponent implements OnInit {
       .subscribe(
         x => {
           this.alertMessage = 'Speichern erfolgreich!';
-          this.customerUpdate.next(this.formGroup.value);
+          const event = new CustomEvent('customerUpdate');
+          document.dispatchEvent(event);
           this.formGroup.reset();
         },
         e => {
@@ -58,6 +57,5 @@ export class AppComponent implements OnInit {
 
   cancleClick() {
     this.formGroup.reset();
-    this.CustomerCanceled.next();
   }
 }

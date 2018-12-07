@@ -2,9 +2,7 @@
 <app-search (search)="onSearch($event)"></app-search>
 <div *ngIf="customers">
 <app-contact *ngFor="let customer of customers"
-             [name]="customer.name"
-             [firstname]="customer.firstname"
-             [identifyer]="customer.name + ' ' + customer.firstname"
+             [customer]="customer"
              (editClick)="onEdit($event)"
              (contactClick)="onContact($event)"
              (paymentClick)="onPayment($event)"></app-contact>

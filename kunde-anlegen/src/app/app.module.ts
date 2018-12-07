@@ -25,7 +25,7 @@ export class AppModule {
 
   }
   ngDoBootstrap() {
-    // Convert `PopupComponent` to a custom element.
+    // Convert `AppComponent` to a custom element.
     const strategyFactory = new ElementZoneStrategyFactory(AppComponent, this.injector);
     const el = createCustomElement(AppComponent, {injector: this.injector, strategyFactory});
     // Register the custom element with the browser.

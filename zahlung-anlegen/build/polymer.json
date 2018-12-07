@@ -1,11 +1,11 @@
 {
   "entrypoint": "index.html",
-  "shell": "payment-create.js",
+  "shell": "payment-edit.js",
   "fragments": [],
   "sources": [
     "src/**/*",
     "index.html",
-    "payment-create.js"
+    "payment-edit.js"
   ],
   "extraDependencies": [
     "bower_components/webcomponentsjs/*.js",
@@ -13,7 +13,7 @@
   ],
   "builds": [
     {
-      "name": "payment-create",
+      "name": "payment-edit",
       "bundle": true,
       "js-compile": true,
       "js": {

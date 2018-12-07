@@ -1,0 +1,44 @@
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="customer/edit"
+       [ngClass]="isActive(menuItems.CUSTOMER_EDIT)"
+       (click)="setActive(menuItems.CUSTOMER_EDIT)">
+      Kunde Anlegen
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="customer/search"
+       [ngClass]="isActive(menuItems.CUSTOMER_SEARCH)"
+       (click)="setActive(menuItems.CUSTOMER_SEARCH)">
+      Kunde Suchen
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="contact/edit"
+       [ngClass]="isActive(menuItems.CONTACT_EDIT)"
+       (click)="setActive(menuItems.CONTACT_EDIT)">
+      Kontakt Anlegen
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="contact/view"
+        [ngClass]="isActive(menuItems.CONTACT_VIEW)"
+        (click)="setActive(menuItems.CONTACT_VIEW)">
+      Kontakte Übersicht
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="payment/edit"
+        [ngClass]="isActive(menuItems.PAYMENT_EDIT)"
+        (click)="setActive(menuItems.PAYMENT_EDIT)">
+      Zahlung Anlegen
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="payment/view"
+        [ngClass]="isActive(menuItems.PAYMENT_VIEW)"
+        (click)="setActive(menuItems.PAYMENT_VIEW)">
+      Zahlung Übersicht
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="015d9dc8-f2c2-4ddb-b3e7-acfe713a02be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/All-in-one/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/contact-edit/contact-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/contact-edit/contact-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/contact-view/contact-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/contact-view/contact-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/customer-edit/customer-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/customer-edit/customer-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/customer-search/customer-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/customer-search/customer-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/payment-edit/payment-create.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/payment-edit/payment-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/assets/payment-view/payment-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/assets/payment-view/payment-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/All-in-one/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-in-one/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kontakt-anlegen/contact-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt-anlegen/contact-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kontakt-anlegen/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kontakt-uebersicht/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt-uebersicht/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kontakt-uebersicht/src/components/Contact-View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt-uebersicht/src/components/Contact-View.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-anlegen/dist/Kunde-Anlegen/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-anlegen/dist/Kunde-Anlegen/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-anlegen/dist/customer-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-anlegen/dist/customer-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-anlegen/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-anlegen/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-suchen/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-suchen/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-suchen/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-suchen/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-suchen/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-suchen/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/custom-elements-es5-adapter-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/webcomponents-bundle-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/webcomponents-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-ce-pf-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/entrypoints/webcomponents-sd-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/payment-create/payment-create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/build/polymer.json" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/build/polymer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/demo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/payment-create.js" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/payment-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/polymer.json" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/polymer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/test/_element_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/test/_element_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-anlegen/test/payment-create_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-anlegen/test/payment-create_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zahlung-uebersicht/src/components/Payment-View.vue" beforeDir="false" afterPath="$PROJECT_DIR$/zahlung-uebersicht/src/components/Payment-View.vue" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>customerUpdate</find>
+      <find>emit</find>
+      <find>CustomerUpdate</find>
+      <find>updatevalues</find>
+      <find>vorname</find>
+      <find>lastname</find>
+      <find>serve</find>
+      <find>style</find>
+      <find>styles</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>firstname</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/kontakt-uebersicht/package.json" />
+        <option value="$PROJECT_DIR$/kontakt-anlegen/package.json" />
+        <option value="$PROJECT_DIR$/zahlung-anlegen/package.json" />
+        <option value="$PROJECT_DIR$/All-in-one/package.json" />
+        <option value="$PROJECT_DIR$/zahlung-anlegen/polymer.json" />
+        <option value="$PROJECT_DIR$/kunde-suchen/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.ts" />
+        <option value="$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.html" />
+        <option value="$PROJECT_DIR$/All-in-one/assets/contact-edit/contact-edit.js" />
+        <option value="$PROJECT_DIR$/kontakt-anlegen/contact-edit.js" />
+        <option value="$PROJECT_DIR$/kontakt-uebersicht/src/components/Contact-View.vue" />
+        <option value="$PROJECT_DIR$/zahlung-uebersicht/src/components/Payment-View.vue" />
+        <option value="$PROJECT_DIR$/backend/db.json" />
+        <option value="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/kunde-anlegen/src/app/app.component.class.ts" />
+        <option value="$PROJECT_DIR$/kunde-anlegen/src/app/angular-element-bridge.ts" />
+        <option value="$PROJECT_DIR$/kunde-anlegen/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/kunde-suchen/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/All-in-one/index.html" />
+        <option value="$PROJECT_DIR$/zahlung-anlegen/payment-edit.js" />
+        <option value="$PROJECT_DIR$/navigation/webpack.config.js" />
+        <option value="$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.scss" />
+        <option value="$PROJECT_DIR$/navigation/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/navigation/angular.json" />
+        <option value="$PROJECT_DIR$/navigation/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/navigation/src/app/menu-items.enum.ts" />
+        <option value="$PROJECT_DIR$/navigation/src/app/navigation.service.ts" />
+        <option value="$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.ts" />
+        <option value="$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="77" />
+    <option name="y" value="47" />
+    <option name="width" value="1161" />
+    <option name="height" value="636" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MicroCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroCRM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MicroCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MicroCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MicroCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MicroCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/navigation" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/kunde-anlegen/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/All-in-one/assets/payment-edit" />
+      <recent name="$PROJECT_DIR$/All-in-one/assets/customer-search" />
+      <recent name="$PROJECT_DIR$/All-in-one/assets/customer-edit" />
+      <recent name="$PROJECT_DIR$/All-in-one/assets/payment-view" />
+      <recent name="$PROJECT_DIR$/All-in-one/assets/contact-view" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="015d9dc8-f2c2-4ddb-b3e7-acfe713a02be" name="Default Changelist" comment="" />
+      <created>1543957869653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543957869653</updated>
+      <workItem from="1543957870897" duration="1619000" />
+      <workItem from="1543998479968" duration="2137000" />
+      <workItem from="1544000718405" duration="16174000" />
+      <workItem from="1544082950861" duration="3948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="23878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24944155" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="TypeScript" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/dist/customer-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="3" column="204458" selection-start-line="3" selection-start-column="204458" selection-end-line="3" selection-end-column="204458" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-anlegen/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="153" selection-start-line="5" selection-start-column="153" selection-end-line="5" selection-end-column="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-uebersicht/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-anlegen/polymer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-anlegen/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/contact/contact.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/dist/Kunde-Suche/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/dist/Kunde-Suche/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-uebersicht/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-uebersicht/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/contact-view/contact-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-uebersicht/src/components/Contact-View.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-anlegen/contact-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kontakt-uebersicht/dist/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-uebersicht/dist/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/payment-view/payment-view.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/customer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/http.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/http.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/http.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-uebersicht/src/components/Payment-View.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+          <folding>
+            <element signature="e#587#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/app.component.class.ts" />
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/angular-element-bridge.ts" />
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/customer-edit/customer-edit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/customer-search/customer-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret column="2038" selection-start-column="2038" selection-end-column="2038" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/payment-edit/payment-edit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zahlung-anlegen/payment-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/All-in-one/assets/contact-edit/contact-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="84" column="32" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-suchen/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunde-anlegen/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/node_modules/@material/tab/mdc-tab.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/menu-items.enum.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/src/app/navigation/navigation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

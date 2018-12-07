@@ -12,7 +12,7 @@ import '@polymer/paper-checkbox/paper-checkbox';
  * @demo demo/index.html
  */
 
-class PaymentCreate extends PolymerElement {
+class PaymentEdit extends PolymerElement {
 
 
   static get template() {
@@ -52,12 +52,12 @@ class PaymentCreate extends PolymerElement {
     };
 
     get SERVER_URL(){ return 'http://localhost:3000/payment'}
-    get url() { return this.id ? this.SERVER_URL + '/' + this.id : this.SERVER_URL; }
-    get method() { return this.id ? 'PUT' : 'POST'; }
+    get url() { return this.paymentId ? this.SERVER_URL + '/' + this.paymentId : this.SERVER_URL; }
+    get method() { return this.paymentId ? 'PUT' : 'POST'; }
     get data() {
         return {
-            id: this.id,
-            customer: this.customer,
+            id: this.paymentId,
+            customer: this.customername,
             bill: this.bill,
             amount: this.amount,
             mwstfree: this.mwstfree,
@@ -93,4 +93,4 @@ class PaymentCreate extends PolymerElement {
     }
 }
 
-window.customElements.define('payment-create', PaymentCreate);
+window.customElements.define('payment-create', PaymentEdit);

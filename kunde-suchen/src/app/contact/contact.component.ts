@@ -7,12 +7,10 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  @Input() name: string;
-  @Input() firstname: string;
-  @Input() identifyer: string;
-  @Output() editClick: EventEmitter<string> = new EventEmitter<string>();
-  @Output() paymentClick: EventEmitter<string> = new EventEmitter<string>();
-  @Output() contactClick: EventEmitter<string> = new EventEmitter<string>();
+  @Input() customer: Customer;
+  @Output() editClick: EventEmitter<Customer> = new EventEmitter<Customer>();
+  @Output() paymentClick: EventEmitter<Customer> = new EventEmitter<Customer>();
+  @Output() contactClick: EventEmitter<Customer> = new EventEmitter<Customer>();
 
   constructor() { }
 
@@ -20,14 +18,14 @@ export class ContactComponent implements OnInit {
   }
 
   onEditClick() {
-    this.editClick.next(this.identifyer);
+    this.editClick.next(this.customer);
   }
 
   onPaymentClick() {
-    this.paymentClick.next(this.identifyer);
+    this.paymentClick.next(this.customer);
   }
 
   onContactClick() {
-    this.contactClick.next(this.identifyer);
+    this.contactClick.next(this.customer);
   }
 }

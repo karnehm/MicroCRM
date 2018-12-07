@@ -7,7 +7,7 @@
   },
   "private": true,
   "description": "Es handelt sich um das Customer Element des Use-Cases Zahlung Anlegen/Bearbeiten aus MicroCRM",
-  "main": "payment-create.js",
+  "main": "payment-edit.js",
   "scripts": {
     "serve": "polymer serve",
     "build:element": "polymer build"

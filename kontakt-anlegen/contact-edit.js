@@ -2,11 +2,12 @@
 
 
     const  URL = 'http://localhost:3000/contact';
+    const  CSS_URL = 'http://localhost:8081/bare.min.css';
 
     const template = document.createElement('template');
 
     template.innerHTML =  `
-    <link rel='stylesheet' type="text/css" href='./bare.min.css'>
+    <link rel='stylesheet' type="text/css" href='` + CSS_URL + `'>
     <style>
       * {
         font-family: sans-serif;
@@ -19,8 +20,8 @@
     <h2>Kontakt Erstellen / Bearbeiten</h2>
     <form>
         <div>
-            <label for="contactId">Kundennummer</label>
-            <input type="input" id="contactId" placeholder="Kundennummer" disabled>
+            <label for="contactId">Kontaktnummer</label>
+            <input type="input" id="contactId" placeholder="Kontaktnummer" disabled>
         </div>
         <div>
             <label for="customername">Name</label>
@@ -49,10 +50,10 @@
         </div>
         <div>
             <slot name="save">
-                <button id="save" type="submit" m-full primary>Speichern</button>
+                <button id="save" type="button" m-full primary>Speichern</button>
             </slot>
             <slot name="cancle">
-                <button id="cancle" type="reset" m-full>Abbrechen</button>
+                <button id="cancle" type="button" m-full>Abbrechen</button>
             </slot>
         </div>
     </form>
@@ -147,16 +148,20 @@
 
             request.open(method, url, shouldBeAsync);
             request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            request.setRequestHeader('Access-Control-Allow-Origin', '*');
             request.send(JSON.stringify(data));
         }
 
         requestCallback() {
+            const event = new CustomEvent('contactUpdate');
             switch (this.status) {
                 case 201:
                     window.alert('Kontakt wurde angelegt');
+                    document.dispatchEvent(event);
                     break;
                 case 200:
                     window.alert('Kontakt wurde aktualisiert');
+                    document.dispatchEvent(event);
                     break;
                 default:
                     window.alert('Es ist ein Fehler aufgetreten.' + request.status + ' ' + request.responseText);

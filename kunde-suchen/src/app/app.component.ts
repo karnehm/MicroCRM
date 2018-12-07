@@ -1,6 +1,7 @@
 import {ApplicationRef, Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
 import {HttpService} from './http.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,10 +9,6 @@ import {HttpService} from './http.service';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
-
-  @Output() customer: EventEmitter<string> = new EventEmitter<string>();
-  @Output() payment: EventEmitter<string> = new EventEmitter<string>();
-  @Output() contact: EventEmitter<string> = new EventEmitter<string>();
 
   private searchValue: string;
   public customers: Customer[];
@@ -36,16 +33,36 @@ export class AppComponent implements OnInit {
     this.updateCustomers(search);
   }
 
-  onEdit(identifyer: string) {
-    this.customer.next(identifyer);
+  onEdit(customer: Customer) {
+    console.log('Customer Edit');
+    this.raiseEvent('customerEdit', customer);
   }
 
-  onPayment(identifyer: string) {
-    this.payment.next(identifyer);
+  onPayment(customer: Customer) {
+    console.log('Payment Edit');
+    this.raiseEvent('paymentEdit', customer)
   }
 
-  onContact(identifyer: string) {
-    this.contact.next(identifyer);
+  onContact(customer: Customer) {
+    console.log('Contact Edit');
+    this.raiseEvent('contactEdit', customer);
   }
 
+  private raiseEvent(event: string, customer: Customer) {
+    const customEvent = new CustomEvent(event, {
+      detail: {
+        customerid: customer.id,
+        lastname: customer.name,
+        firstname: customer.firstname,
+        customername: customer.firstname + ' ' + customer.name,
+        gender: customer.gender,
+        phone: {
+          number: customer.phone.number,
+          type: customer.phone.type
+        }
+      },
+      bubbles: true
+    });
+    document.dispatchEvent(customEvent);
+  }
 }

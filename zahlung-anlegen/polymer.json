@@ -2,12 +2,12 @@
   "npm": true,
   "moduleResolution": "node",
   "entrypoint": "index.html",
-  "shell": "payment-create.js",
+  "shell": "payment-edit.js",
   "extraDependencies": [
     "./node_modules/@webcomponents/webcomponentsjs/**"
   ],
   "builds": [{
-    "name": "payment-create",
+    "name": "payment-edit",
     "bundle": true,
     "js-compile": true,
     "js": {

@@ -9,9 +9,9 @@
         </div>
       </template>
       <template slot="bill" slot-scope="data">
-        <a href="#" v-on:click="$emit('bill', data.item)" >
+        <b-button v-on:click="onClick(data.item)" outline-primary>
           {{data.value}}
-        </a>
+        </b-button>
       </template>
     </b-table>
   </div>
@@ -21,6 +21,7 @@
     import axios from 'axios'
     import bTable from 'bootstrap-vue/es/components/table/table'
     import bAlert from 'bootstrap-vue/es/components/alert/alert'
+    import bButton from 'bootstrap-vue/es/components/button/button'
 
     export default {
         name: 'PaymentView',
@@ -33,7 +34,8 @@
         },
         components: {
             'b-table': bTable,
-            'b-alert': bAlert
+            'b-alert': bAlert,
+            'b-button': bButton,
         },
         data () {
             return {
@@ -78,6 +80,20 @@
                         this.data = null
                         this.isError = true
                     })
+            },
+            onClick: function (data) {
+                const event = new CustomEvent('paymentEdit', {
+                    detail: {
+                        paymentid: data.id,
+                        customername: data.customer,
+                        amount: data.amount,
+                        amountdate: data.amountdate,
+                        bill: data.bill,
+                        mwstfree: data.mwstfree,
+                        paydate: data.paydate
+                    }
+                });
+                document.dispatchEvent(event);
             }
         },
         mounted () {

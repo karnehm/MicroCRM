@@ -9,16 +9,74 @@
     <script src="assets/contact-edit/contact-edit.js"></script>
     <script src="assets/contact-view/contact-view.js"></script>
     <script src="assets/payment-view/payment-view.js"></script>
-    <script type="module" src="assets/payment-edit/payment-create.js"></script>
+    <script type="module" src="assets/payment-edit/payment-edit.js"></script>
     <script src="assets/customer-search/customer-search.js"></script>
     <script src="assets/customer-edit/customer-edit.js"></script>
 
 </head>
 <body>
+    <script type="application/javascript">
+        function onLoad() {
+            console.log('onLoad');
+            document.addEventListener('customerEdit', onCustomerEdit);
+            document.addEventListener('contactEdit', onContactEdit);
+            document.addEventListener('paymentEdit', onPaymentEdit);
+        }
+
+        function onContactEdit(event) {
+            console.log('contact Edit');
+            const data = event.detail;
+            const element = document.getElementById('contact-edit');
+            setAttribute(element, 'contact-id', data.contactid);
+            setAttribute(element, 'customername', data.customername);
+            setAttribute(element, 'date', data.date);
+            setAttribute(element, 'description', data.description);
+            setAttribute(element, 'contacttype', data.type);
+            setAttribute(element, 'comment', data.comment);
+        }
+
+        function onPaymentEdit(event) {
+            const data = event.detail;
+            const element = document.getElementById('payment-edit');
+            setAttribute(element, 'customername', data.customername);
+            setAttribute(element, 'payment-id', data.paymentid);
+            setAttribute(element, 'amount', data.amount);
+            setAttribute(element, 'amountdate', data.amountdate);
+            setAttribute(element, 'bill', data.bill);
+            setAttribute(element, 'mwstfree', data.mwstfree);
+            setAttribute(element, 'paydate', data.paydate);
+
+        }
+
+        function onCustomerEdit(event) {
+            console.log('contact Edit Event');
+            const data = event.detail;
+            const element = document.getElementById('customer-edit');
+            element.innerHTML ='<customer-edit customerid=' + data.customerid +
+                                    ' gender=' + data.gender +
+                                    ' lastname=' + data.lastname +
+                                    ' firstname=' + data.firstname +
+                                    ' phonenumber=' + data.phone.number +
+                                    ' phonetype=' + data.phone.type + '></customer-edit>';
+
+            setAttribute(element, 'customerd', data.customerid);
+            setAttribute(element, 'gender', data.gender);
+        }
+
+        function setAttribute(element, attribute, value) {
+            if(value)
+                element.setAttribute(attribute, value);
+            else
+                element.removeAttribute(attribute);
+        }
+        window.onload = onLoad;
+    </script>
     <div style="display:table; align:center">
         <div style="display:table-row;">
             <div style="display: table-cell">
-                <customer-edit></customer-edit>
+                <div id="customer-edit">
+                    <customer-edit></customer-edit>
+                </div>
             </div>
             <div style="display:table-cell;">
                 <customer-search></customer-search>
@@ -26,7 +84,7 @@
         </div>
         <div style="display: table-row">
             <div style="display: table-cell; width:45%">
-                <contact-edit></contact-edit>
+                <contact-edit id="contact-edit"></contact-edit>
             </div>
             <div style="display: table-cell; width:45%">
                 <contact-view></contact-view>
@@ -34,7 +92,7 @@
         </div>
         <div style="display: table-row">
             <div style="display: table-cell">
-                <payment-create></payment-create>
+                <payment-create id="payment-edit"></payment-create>
             </div>
             <div style="display: table-cell">
                 <payment-view></payment-view>

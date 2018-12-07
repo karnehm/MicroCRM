@@ -10,7 +10,7 @@
             <h4>{{contact.date}}</h4>
           </div>
           <div class="description ">
-            <button  type="button" class="btn btn-light btn-sm" v-on:click="$emit('contact', contact)">🖊️</button>
+            <button  type="button" class="btn btn-light btn-sm" @click="edit(contact)">🖊️</button>
             {{contact.description}}
           </div>
           <div class="type margin">
@@ -64,12 +64,28 @@
                         this.data = null
                         this.isError = true
                     })
+            },
+            edit: function (contact) {
+                console.log('jo');
+                const event = new CustomEvent('contactEdit',
+                    {
+                        detail: {
+                            contactid : contact.id,
+                            customername: contact.customer,
+                            date: contact.date,
+                            description: contact.description,
+                            type: contact.type,
+                            comment: contact.comment
+                        },
+                        bubbles: true
+                    });
+                document.dispatchEvent(event);
             }
         },
         mounted () {
             this.updateValues(this.customername)
             document.addEventListener('contactUpdate', (e) => this.updateValues(e.detail ? e.detail.customername : null));
-        },
+        }
     }
 </script>
 

@@ -4,53 +4,21 @@
       "id": 1,
       "gender": "Herr",
       "name": "Mustermann",
-      "vorname": "Max",
+      "firstname": "Max",
       "phone": {
         "number": "0123456789",
-        "typ": "Mobil"
+        "type": "Privat"
       }
     },
     {
       "id": 2,
       "gender": "Herr",
-      "name": "aasdf",
-      "vorname": "asdf",
+      "name": "Karnehm",
+      "firstname": "Dominic",
       "phone": {
-        "number": "555",
+        "number": "789",
         "type": "Mobil"
       }
-    },
-    {
-      "id": 3,
-      "gender": "Herr",
-      "name": "hasdf",
-      "vorname": "asdf",
-      "phone": {
-        "number": "asdf",
-        "type": "Mobil"
-      }
-    },
-    {
-      "customerId": "",
-      "gender": "Herr",
-      "lastname": "asdf",
-      "firstname": "asdf",
-      "phone": {
-        "number": "222",
-        "type": "Mobil"
-      },
-      "id": 4
-    },
-    {
-      "customerId": "",
-      "gender": "Herr",
-      "lastname": "qwer",
-      "firstname": "asdf",
-      "phone": {
-        "number": "www",
-        "type": "Privat"
-      },
-      "id": 5
     }
   ],
   "contact": [
@@ -64,10 +32,11 @@
     },
     {
       "id": 2,
-      "customer": "Hansi",
+      "customer": "Huber Alexand",
       "description": "Beschwerde",
       "type": "Telefon",
-      "date": "03.12.2018"
+      "date": "03.12.2018",
+      "comment": "Kommentare sind "
     }
   ],
   "payment": [
@@ -100,35 +69,12 @@
     },
     {
       "id": 3,
-      "bill": "123",
-      "amount": "",
+      "customer": "Max Mustermann",
+      "bill": "456",
+      "amount": "90",
       "mwstfree": false,
-      "amountdate": "",
-      "paydate": ""
-    },
-    {
-      "id": 4,
-      "bill": "123",
-      "amount": "",
-      "mwstfree": false,
-      "amountdate": "",
-      "paydate": ""
-    },
-    {
-      "id": 5,
-      "bill": "123",
-      "amount": "",
-      "mwstfree": false,
-      "amountdate": "",
-      "paydate": ""
-    },
-    {
-      "id": 6,
-      "bill": "123",
-      "amount": "123",
-      "mwstfree": true,
-      "amountdate": "121212",
-      "paydate": "121212"
+      "amountdate": "12.12.2012",
+      "paydate": "12.12.2013"
     }
   ]
 }
