@@ -78,13 +78,17 @@
             //     .addEventListener('click', this.cancle.bind(this));
         }
 
+        set customername(val) {
+            this.setAttribute('customername', val);
+        }
+
         static get observedAttributes() {
-            return ['contact-id', 'customername', 'description', 'contacttype', 'date', 'comment'];
+            return ['contactid', 'customername', 'description', 'contacttype', 'date', 'comment'];
         }
 
         attributeChangedCallback(name, oldValue, newValue) {
             switch (name) {
-                case 'contact-id':
+                case 'contactid':
                     this.shadow.getElementById('contactId').value = newValue;
                     break;
                 case 'customername':

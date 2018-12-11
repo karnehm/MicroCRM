@@ -1,4 +1,4 @@
-import {ApplicationRef, Component, EventEmitter, Injector, Input, OnInit, Output} from '@angular/core';
+import {ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@angular/core';
 import {HttpService} from './http.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {forbiddenNameValidator} from './forbidden-name.directive';
@@ -8,9 +8,9 @@ import {forbiddenNameValidator} from './forbidden-name.directive';
   templateUrl: './app.component.html',
   styleUrls: ['app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnChanges {
 
-  @Input() customerid = '';
+  _customerid = '-1';
   @Input() gender = '';
   @Input() lastname = '';
   @Input() firstname = '';
@@ -20,11 +20,22 @@ export class AppComponent implements OnInit {
   alertMessage: string;
   formGroup: FormGroup;
 
-  constructor(private fb: FormBuilder, private http: HttpService, private app: ApplicationRef) { }
+  constructor(private fb: FormBuilder, private http: HttpService, private app: ChangeDetectorRef) { }
+
+  @Input()
+  set customerid(val) {
+    this.formGroup.patchValue({id:val});
+    this._customerid = val;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
+    this.app.detectChanges();
+  }
 
   ngOnInit() {
     this.formGroup  = this.fb.group({
-      id: [this.customerid],
+      id: [this._customerid],
       gender: [this.gender || 'Geschlecht', [Validators.required, forbiddenNameValidator(/Geschlecht/i)]],
       name: [this.lastname, Validators.required],
       firstname: [this.firstname, Validators.required],
@@ -58,4 +69,6 @@ export class AppComponent implements OnInit {
   cancleClick() {
     this.formGroup.reset();
   }
+
+
 }

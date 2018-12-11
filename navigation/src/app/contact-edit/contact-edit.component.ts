@@ -22,6 +22,7 @@ export class ContactEditComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe((params) => {
       this.contactid = params.contactid;
+      this._customername = params.customername;
       this.date = params.date;
       this.description = params.description;
       this.type = params.type;

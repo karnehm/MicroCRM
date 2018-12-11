@@ -11,7 +11,7 @@ import {ContactViewComponent} from './contact-view/contact-view.component';
 import {PaymentViewComponent} from './payment-view/payment-view.component';
 import {PaymentEditComponent} from './payment-edit/payment-edit.component';
 
-import '../assets/contact-edit/contact-edit';
+
 import '../assets/contact-view/contact-view';
 import '../assets/customer-edit/customer-edit';
 import '../assets/customer-search/customer-search';

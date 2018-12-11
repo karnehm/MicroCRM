@@ -2,7 +2,7 @@
 
 
     const  URL = 'http://localhost:3000/contact';
-    const  CSS_URL = 'assets/contact-edit/bare.min.css';
+    const  CSS_URL = 'http://localhost:8081/bare.min.css';
 
     const template = document.createElement('template');
 
@@ -77,7 +77,9 @@
             // this.shadowRoot.querySelector('slot[name=cancle]')
             //     .addEventListener('click', this.cancle.bind(this));
         }
-
+        set customername(val) {
+            this.setAttribute('customername', val);
+        }
         static get observedAttributes() {
             return ['contact-id', 'customername', 'description', 'contacttype', 'date', 'comment'];
         }
