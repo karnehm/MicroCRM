@@ -24,8 +24,9 @@ Die Ausführung der einzelnen Build-Prozesse ist den jeweiligen README-Dokumente
 ## UI-Fragmente
 
 Die einzelnen UI-Fragmente und deren verwendete Erweiterung sind der folgendne Tabelle zu entnehmen. 
-|UI-Fragment|Ordner  | Framework/Bibliothek
-|--|--|--|
+
+| UI-Fragment | Ordner  | Framework/Bibliothek|
+|---|---|---|
 | Kunde Erstellung/Anzeige | `./kunde-anlegen` | Angular |
 | Kunde Suche | `./kunde-suchen`|Angular |
 | Kontakt Erstellung/Anzeige| `./kontakt-anlegen`| JavaScript|
