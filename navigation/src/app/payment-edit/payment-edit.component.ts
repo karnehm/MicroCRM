@@ -9,13 +9,13 @@ import {switchMap} from 'rxjs/operators';
 })
 export class PaymentEditComponent implements OnInit {
 
-  private customerName: string;
-  private id;
-  private bill;
-  private amount;
-  private mwstfree;
-  private amountdate;
-  private paydate;
+  public customerName: string;
+  public id;
+  public bill;
+  public amount;
+  public mwstfree;
+  public amountdate;
+  public paydate;
 
   constructor(private route: ActivatedRoute) { }
 

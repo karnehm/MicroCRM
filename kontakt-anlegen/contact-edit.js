@@ -2,7 +2,7 @@
 
 
     const  URL = 'http://localhost:3000/contact';
-    const  CSS_URL = 'http://localhost:8081/bare.min.css';
+    const  CSS_URL = 'http://barecss.com/css/bare.min.css';
 
     const template = document.createElement('template');
 
@@ -74,13 +74,39 @@
             this.shadow.getElementById('save')
                 .addEventListener('click', this.save.bind(this));
 
-            // this.shadowRoot.querySelector('slot[name=cancle]')
-            //     .addEventListener('click', this.cancle.bind(this));
+        }
+
+
+        setAttribute(qualifiedName, value) {
+            value = value ? value : '';
+            super.setAttribute(qualifiedName, value);
+        }
+
+        set contactid(val) {
+            this.setAttribute('contactid', val);
         }
 
         set customername(val) {
             this.setAttribute('customername', val);
         }
+
+        set description(val) {
+            this.setAttribute('description', val);
+        }
+
+        set contacttype(val) {
+            this.setAttribute('contacttype', val);
+        }
+
+        set date(val) {
+            this.setAttribute('date', val);
+        }
+
+        set comment(val) {
+            this.setAttribute('comment', val);
+        }
+
+
 
         static get observedAttributes() {
             return ['contactid', 'customername', 'description', 'contacttype', 'date', 'comment'];

@@ -10,12 +10,12 @@ import {forbiddenNameValidator} from './forbidden-name.directive';
 })
 export class AppComponent implements OnInit, OnChanges {
 
-  _customerid = '-1';
-  @Input() gender = '';
-  @Input() lastname = '';
-  @Input() firstname = '';
-  @Input() phonenumber = '';
-  @Input() phonetype = '';
+  _customerid = '';
+  _gender = '';
+  _lastname = '';
+  _firstname = '';
+  _phonenumber = '';
+  _phonetype = '';
 
   alertMessage: string;
   formGroup: FormGroup;
@@ -24,24 +24,53 @@ export class AppComponent implements OnInit, OnChanges {
 
   @Input()
   set customerid(val) {
-    this.formGroup.patchValue({id:val});
+    this.formGroup.patchValue({id: val});
     this._customerid = val;
   }
 
+  @Input()
+  set gender(val) {
+    this.formGroup.patchValue({gender: val});
+    this._gender = val;
+  }
+
+  @Input()
+  set lastname(val) {
+    this.formGroup.patchValue({name: val});
+    this._lastname = val;
+  }
+
+  @Input()
+  set firstname(val) {
+    this.formGroup.patchValue({firstname: val});
+    this._firstname = val;
+  }
+
+  @Input()
+  set phonenumber(val) {
+    this.formGroup.patchValue({phone: {number: val}});
+    this._phonenumber = val;
+  }
+
+  @Input()
+  set phonetype(val) {
+    this.formGroup.patchValue({phone: {type: val}});
+    this._phonetype = val;
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
     this.app.detectChanges();
   }
 
   ngOnInit() {
     this.formGroup  = this.fb.group({
       id: [this._customerid],
-      gender: [this.gender || 'Geschlecht', [Validators.required, forbiddenNameValidator(/Geschlecht/i)]],
-      name: [this.lastname, Validators.required],
-      firstname: [this.firstname, Validators.required],
+      gender: [this._gender || 'Geschlecht', [Validators.required, forbiddenNameValidator(/Geschlecht/i)]],
+      name: [this._lastname, Validators.required],
+      firstname: [this._firstname, Validators.required],
       phone: this.fb.group({
-        number: [this.phonenumber, Validators.required],
-        type: [this.phonetype || 'Art', [Validators.required, forbiddenNameValidator(/Art/i)]]
+        number: [this._phonenumber, Validators.required],
+        type: [this._phonetype || 'Art', [Validators.required, forbiddenNameValidator(/Art/i)]]
       })
     });
   }

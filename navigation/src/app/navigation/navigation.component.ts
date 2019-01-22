@@ -18,11 +18,11 @@ export class NavigationComponent implements AfterViewInit {
 
   }
 
-  private isActive(item: MenuItems) {
+  public isActive(item: MenuItems) {
     return this.navigationService.activeNavigation === item ? 'active' : '';
   }
 
-  private setActive(item: MenuItems) {
+  public setActive(item: MenuItems) {
     this.navigationService.activeNavigation = item;
   }
 }

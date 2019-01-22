@@ -6,17 +6,17 @@ import {ActivatedRoute} from '@angular/router';
   templateUrl: './customer-edit.component.html',
   styleUrls: ['./customer-edit.component.css']
 })
-export class CustomerEditComponent implements OnChanges {
-  private customerid;
-  private lastname;
-  private firstname;
-  private gender;
-  private phonetype;
-  private phonenumber;
+export class CustomerEditComponent implements OnInit {
+  public customerid;
+  public lastname;
+  public firstname;
+  public gender;
+  public phonetype;
+  public phonenumber;
 
   constructor(private route: ActivatedRoute) { }
 
-  ngOnChanges() {
+  ngOnInit() {
     this.route.params.subscribe((params) => {
       this.customerid = params.customerid;
       this.lastname = params.lastname;

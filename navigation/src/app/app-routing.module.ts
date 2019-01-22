@@ -6,8 +6,13 @@ import {ContactEditComponent} from './contact-edit/contact-edit.component';
 import {ContactViewComponent} from './contact-view/contact-view.component';
 import {PaymentEditComponent} from './payment-edit/payment-edit.component';
 import {PaymentViewComponent} from './payment-view/payment-view.component';
+import {MainPageComponent} from './main-page/main-page.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: MainPageComponent
+  },
   {
     path: 'customer/edit',
     component: CustomerEditComponent

@@ -11,10 +11,10 @@ export class ContactEditComponent implements OnInit {
 
   public contactid = '123';
   public _customername = 'Hi';
-  private date;
-  private description;
-  private type;
-  private comment;
+  public date;
+  public description;
+  public type;
+  public comment;
 
   constructor(private route: ActivatedRoute, private app: ApplicationRef) { }
 

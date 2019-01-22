@@ -1,5 +1,5 @@
 # Building
-Ein Building Prozess ist nicht Notwendig
+Ein Build Prozess ist nicht Notwendig.
 
 # Starten
 

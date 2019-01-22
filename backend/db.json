@@ -42,10 +42,10 @@
   "payment": [
     {
       "id": 1,
-      "customer": "Mustermann Max",
+      "customer": "Mustermann Andrea",
       "bill": "123",
       "amount": "50",
-      "mwstfree": false,
+      "mwstfree": "false",
       "amountdate": "04.12.2018",
       "paydate": "09.12.2018"
     },

@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>MicroCRM - All-in-One</title>
+    <!-- Durch UI-Fragmente vorgegebene Abhängigkeiten -->
     <script src="https://unpkg.com/zone.js@0.8.26/dist/zone.js"></script>
-    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue@2.5.20/dist/vue.js"></script>
 
+    <!-- UI-Fragmente -->
     <script src="assets/contact-edit/contact-edit.js"></script>
     <script src="assets/contact-view/contact-view.js"></script>
     <script src="assets/payment-view/payment-view.js"></script>
-    <script type="module" src="assets/payment-edit/payment-edit.js"></script>
     <script src="assets/customer-search/customer-search.js"></script>
     <script src="assets/customer-edit/customer-edit.js"></script>
+
+    <!-- Polymer ist als ES-Modul zu laden -->
+    <script type="module" src="assets/payment-edit/payment-edit.js"></script>
 
 </head>
 <body>
     <script type="application/javascript">
         function onLoad() {
-            console.log('onLoad');
             document.addEventListener('customerEdit', onCustomerEdit);
             document.addEventListener('contactEdit', onContactEdit);
             document.addEventListener('paymentEdit', onPaymentEdit);
         }
 
         function onContactEdit(event) {
-            console.log('contact Edit');
             const data = event.detail;
             const element = document.getElementById('contact-edit');
+            element.setAttribute('contact-id', data.contactid);
             setAttribute(element, 'contact-id', data.contactid);
             setAttribute(element, 'customername', data.customername);
             setAttribute(element, 'date', data.date);
@@ -49,18 +52,15 @@
         }
 
         function onCustomerEdit(event) {
-            console.log('contact Edit Event');
             const data = event.detail;
+            console.log('jo');
             const element = document.getElementById('customer-edit');
-            element.innerHTML ='<customer-edit customerid=' + data.customerid +
-                                    ' gender=' + data.gender +
-                                    ' lastname=' + data.lastname +
-                                    ' firstname=' + data.firstname +
-                                    ' phonenumber=' + data.phone.number +
-                                    ' phonetype=' + data.phone.type + '></customer-edit>';
-
-            setAttribute(element, 'customerd', data.customerid);
+            setAttribute(element, 'customerid', data.customerid);
             setAttribute(element, 'gender', data.gender);
+            setAttribute(element, 'lastname', data.lastname);
+            setAttribute(element, 'firstname', data.firstname);
+            setAttribute(element, 'phonenumber', data.phone.number);
+            setAttribute(element, 'phonetype', data.phone.type);
         }
 
         function setAttribute(element, attribute, value) {
@@ -69,37 +69,32 @@
             else
                 element.removeAttribute(attribute);
         }
+
         window.onload = onLoad;
     </script>
     <div style="display:table; align:center">
         <div style="display:table-row;">
             <div style="display: table-cell">
-                <div id="customer-edit">
-                    <customer-edit></customer-edit>
-                </div>
+                    <customer-edit id="customer-edit"></customer-edit>
             </div>
-            <div style="display:table-cell;">
+            <div style="display:table-cell; width:50%">
                 <customer-search></customer-search>
             </div>
-        </div>
-        <div style="display: table-row">
-            <div style="display: table-cell; width:45%">
-                <contact-edit id="contact-edit"></contact-edit>
-            </div>
-            <div style="display: table-cell; width:45%">
-                <contact-view></contact-view>
-            </div>
-        </div>
-        <div style="display: table-row">
-            <div style="display: table-cell">
+            <div style="display: table-cell; max-width: 33% ">
                 <payment-create id="payment-edit"></payment-create>
             </div>
-            <div style="display: table-cell">
+        </div>
+        <div style="display: table-row">
+            <div style="display: table-cell; width:33%">
+                <contact-edit id="contact-edit"></contact-edit>
+            </div>
+            <div style="display: table-cell; ">
+                <contact-view></contact-view>
+            </div>
+            <div style="display: table-cell; width:33%">
                 <payment-view></payment-view>
             </div>
         </div>
     </div>
-
-
 </body>
 </html>

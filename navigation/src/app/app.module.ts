@@ -10,12 +10,7 @@ import {ContactEditComponent} from './contact-edit/contact-edit.component';
 import {ContactViewComponent} from './contact-view/contact-view.component';
 import {PaymentViewComponent} from './payment-view/payment-view.component';
 import {PaymentEditComponent} from './payment-edit/payment-edit.component';
-
-
-import '../assets/contact-view/contact-view';
-import '../assets/customer-edit/customer-edit';
-import '../assets/customer-search/customer-search';
-import '../assets/payment-view/payment-view';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @NgModule({
@@ -27,7 +22,8 @@ import '../assets/payment-view/payment-view';
     ContactEditComponent,
     ContactViewComponent,
     PaymentViewComponent,
-    PaymentEditComponent
+    PaymentEditComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
