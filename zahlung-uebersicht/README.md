@@ -1,29 +1,22 @@
-# zahlung-uebersicht
+# Zahlung Übersicht
 
-## Project setup
-```
-npm install
-```
+Es handelt sich um das UI-Fragment *Zahlung Übersicht* des Fallbeispiels **MicroCRM**.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
 
-### Compiles and minifies for production
+Die Installation erfolgt über den Befehl: 
+
 ```
-npm run build
+	npm install
 ```
 
-### Run your tests
+## Build-Prozess
+
+Zur durchführung des Build-Prozesses ist der folgende Befehl auszuführen:
+
 ```
-npm run test
+	npm run build:element
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+Das JavaScript-Dokument des UI-Fragments ist ``./dist/payment-view.js``.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

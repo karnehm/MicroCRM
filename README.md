@@ -36,7 +36,7 @@ Die einzelnen UI-Fragmente und deren verwendete Erweiterung sind der folgendne T
 
 
 ## UI-Komposition
-Die UI-Kompositionen, auch als Implementierung der Makro-Architekturen zu bezeichnen, ist den Ordnern `./All-in-one` und `./navigation` zu entnehmen.
+Die UI-Kompositionen, auch als Implementierung der Makro-Architekturen zu bezeichnen, ist den Ordnern `./all-in-one` und `./navigation` zu entnehmen.
 ## Backend
 
 Das Backend ist beinhaltet im Ordner ```./backend```

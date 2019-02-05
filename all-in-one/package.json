@@ -1,13 +1,9 @@
 {
 	"name": "all-in-one",
 	"version": "1.0.0",
-	"license": "UNLICENSED",
 	"email": "dominic.karnehm@gmail.com",
 	"description": "Es handelt sich um die Makro-Architektur der Variante All-in-one, welches im Rahmen des Fallbeispiels MicroCRM erstellt wurde.",
 	"scripts": {
-		"serve:element": "http-server -p 8080"
-	},
-	"dependencies": {
-		"http-server": "^0.11.1"
+		"start": "http-server -p 8080"
 	}
 }

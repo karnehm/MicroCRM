@@ -1,10 +1,9 @@
-# Building
-Ein Build Prozess ist nicht Notwendig.
+# Kontakt-Anlegen
 
-# Starten
+Es handelt sich um das UI-Fragment *Kontakt Anlegen/Bearbeiten* der Fallstudie **MicroCRM**. 
 
-```
-npm run serve:element
-```
+Ein Build Prozess ist nicht notwendig. 
 
-Aufrufen unter http://localhost:8081/
+Es ist eine testweise Ausführung mittels ``index.html`` möglich. Das JavaScript-Dokument des UI-Fragments ist ``contact-edit.js``.
+
+

@@ -1,27 +1,25 @@
 # Navigation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
+Es handelt sich um die UI-Komposition, auch als Implementierung der Makro-Architekturen zu bezeichnen, der Variante Navigation der Fallstudie **MicroCRM**. 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Einbinden der UI-Fragmente
+Die Einbindung der Skripte der einzelnen UI-Fragmente erfolgt unter dem Ordner ``./src/assets/``. Hier ist für jedes einzelne UI-Fragment ein seperater Ordner vorhanden, in welchem das Skript einzufügen ist. 
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Die Installation erfolgt über ``npm install``.
+
+## Run
+Das Ausführen innerhalb eines Entwickler-Servers ist mit folgendem Befehl möglich:
+
+```
+	npm run start
+```
+Das Aufrufen ist unter ``http://localhost:4200`` möglich.
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Die Erstellung eines Builds erfolgt über:
+```
+	npm run build
+```

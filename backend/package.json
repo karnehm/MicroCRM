@@ -6,8 +6,5 @@
 	"description": "Es handelt sich um das im Rahmen der Bachelor Arbeit verwendete Backend.",
 	"scripts": {
 		"start": "json-server --watch db.json"
-	},
-	"dependencies": {
-		"json-server": "^0.14.0"
 	}
 }

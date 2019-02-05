@@ -1,27 +1,22 @@
-# KundeSuche
+# Kunde Suchen
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
+Es handelt sich um das UI-Fragment *Kunde Suchen* des Fallbeispiels **MicroCRM**.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Die Installation erfolgt über den Befehl: 
 
-## Code scaffolding
+```
+	npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Build-Prozess
 
-## Build
+Zur durchführung des Build-Prozesses ist der folgende Befehl auszuführen:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+	npm run build:element
+```
 
-## Running unit tests
+Das JavaScript-Dokument des UI-Fragments ist ``./dist/Kunde-Suchen/main.js``. Für eine erfolgreiche Einbindung in die Makro-Architekturen ist eine umbenennung der Datei in ``customer-search.js`` notwendig.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,21 +1,25 @@
-# \<payment-create\>
+# Zahlung Anlegen
 
-Es handelt sich um das Customer Element des Use-Cases Zahlung Anlegen/Bearbeiten aus MicroCRM
+Es handelt sich um das UI-Fragment *Zahlung Anlegen/Bearbeiten* des Fallbeispiels **MicroCRM**.
 
-## Install the Polymer-CLI
+## Installation
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) and npm (packaged with [Node.js](https://nodejs.org)) installed. Run `npm install` to install your element's dependencies, then run `polymer serve` to serve your element locally.
-
-## Viewing Your Element
+Die Installation erfolgt über den Befehl: 
 
 ```
-$ polymer serve
+	npm install
 ```
 
-## Running Tests
+## Entwickler Test
+Polymer erlaubt das ausführen der Web Component innerhalb eines Entwicklerservers.
+Dies erfolgt mit dem Befehl ``npm run serve``. Der Aufruf des Servers erfolgt über [http://127.0.0.1:8081](http://127.0.0.1:8081).
+
+## Build-Prozess
+
+Zur durchführung des Build-Prozesses ist der folgende Befehl auszuführen:
 
 ```
-$ polymer test
+	npm run build:element
 ```
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+Das JavaScript-Dokument des UI-Fragments ist ``./build/payment-edit/payment-edit.js``.

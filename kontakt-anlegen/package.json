@@ -1,7 +1,6 @@
 {
 	"name": "customer-edit",
 	"version": "1.0.0",
-	"license": "UNLICENSED",
 	"email": "dominic.karnehm@gmail.com",
 	"description": "Es handelt sich um das Micro-Front-End Kunde Anlegen (<customer-edit>), welches im Rahmen des Fallbeispiels MicroCRM erstellt wurde.",
 	"scripts": {
