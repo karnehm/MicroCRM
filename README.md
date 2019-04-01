@@ -1,6 +1,9 @@
 
 # MicroCRM
 Bei diesem Projekt handelt es sich um die Implementierung der Fallstudie ***MicroCRM***, welche während der Bachelorarbeit ***Machbarkeit und Umsetzung einer Micro-Frontend Architektur mit Web Components*** umgesetzt wurde.
+
+Der theoretische Hintergrund sowie die vorgenommenen Konfigurationen sind der Arbeit unter [http://gateway-bayern.de/BV045526963](http://gateway-bayern.de/BV045526963) zu entnehmen. 
+
 ## Abhängigkeiten
 
 Die Implementierung erfolgte unter der Node Version 8.12.0.
